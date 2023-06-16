@@ -121,9 +121,9 @@ export const WrapperPage = ({ children, title }: PageProps): JSX.Element => {
   }, [pathname, user]);
 
   const handleAddBankInfo = async () => {
-    const accountName = accountNameRef.current.value;
-    const accountNo = accountNoRef.current.value;
-    const secret = secretRef.current.value;
+    const accountName = accountNameRef.current.valueOf;
+    const accountNo = accountNoRef.current.valueOf;
+    const secret = secretRef.current.valueOf;
     setModalErrorMessage(null);
     setAddingBankAccount(true);
     try {
@@ -179,7 +179,7 @@ export const WrapperPage = ({ children, title }: PageProps): JSX.Element => {
               </Head>
               <Toolbar
                 sx={{
-                  pr: "24px", // keep right padding when drawer closed
+                  pr: "20px", // keep right padding when drawer closed
                 }}
               >
                 <IconButton

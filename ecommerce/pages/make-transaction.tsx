@@ -141,7 +141,7 @@ const TransactionInfoPromt = ({
     return errors;
   }
   const matchSecret = () => {
-    const value = accountSecretRef.current.value;
+    const value = accountSecretRef.current.valueOf.toString();
     console.log({ value });
     return value === user?.secret;
   };

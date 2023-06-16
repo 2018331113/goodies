@@ -24,11 +24,11 @@ const Navbar = styled.div`
     display: flex;
     align-items: center;
 
-    background: #b5b5b5;
+    background: #ffffff;
     color: white;
     font-family: Helvetica;
     font-weight: 300;
-    min-height: 80px;
+    min-height: 60px;
   }
 
   .navbar__title {
@@ -133,7 +133,7 @@ export const Nav = ({
   }, [session, user]);
 
   return (
-    <Navbar>
+    <Navbar >
       <div className="navbar">
         <div className="navbar__title navbar__item">
           <Link
